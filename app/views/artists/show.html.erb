@@ -1,2 +1,14 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<h1>
+  <%= @artist.name %> <%= link_to "Home", root_path, class: "btn btn-default", style: "float: right" %>
+</h1>
+
+<h3><%= @artist.country %></h3>
+
+<p> <%= image_tag(@artist.image) %> </p>
+<p><%= simple_format @artist.bio %></p>
+
+<h1>Songs</h1>
+
+<% songs = @artist.songs.sort_by { |song| song.year } %>
+
+<%= render songs, hide_artist: true %>

@@ -1,10 +1,13 @@
 <div class="song-item">
 
-  <div class="details">
+  <div class="thumbnail">
 
-    <h3><%= link_to song.title, song %></h3>
-    <h4><%= link_to song.artist.name, song.artist %></h4>
+    <h3><span class="glyphicon glyphicon-music"></span> <%= link_to song.title, song %></h3>
+    <% if !defined?(hide_artist) || !hide_artist %>
+      <h4><%= link_to song.artist.name, song.artist %></h4>
+    <% end %>
+
     <p><%= song.year %></p>
 
   </div>
-</dv>
+</div>

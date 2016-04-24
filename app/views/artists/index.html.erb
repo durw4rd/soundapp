@@ -1,6 +1,8 @@
-<h1>Artists<%= link_to "New Artist", new_artist_path, class: "btn btn-default", style: "float: right" %></h1>
+<h1>Artists<%= link_to "Add Artist", new_artist_path, class: "btn btn-default", style: "float: right" %></h1>
 <hr>
 
-<% @artists.each do | artist | %>
-  <p><%= link_to artist.name, artist %></p>
-<% end %>
+<div class="index-list">
+  <% @artists.each do | artist | %>
+    <p><%= link_to artist.name, artist %></p>
+  <% end %>
+</div>
