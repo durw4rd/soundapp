@@ -1,7 +1,7 @@
 Artist.create(
 name: "Johnny Pinpas",
 country: "USA",
-image: "http://www.realtimelive.co.uk/wp-content/uploads/2015/01/band-of-year.jpg",
+image: "johnny-pinpas.jpg",
 bio: "Chillwave mixtape cornhole squid fanny pack. Yr roof party brunch, health goth synth letterpress artisan skateboard mustache leggings blue bottle fixie. Letterpress squid hammock, retro health goth small batch twee skateboard cronut helvetica authentic. Post-ironic godard pour-over occupy gentrify hammock, semiotics +1 tattooed listicle. Quinoa stumptown iPhone, artisan cardigan four loko ethical flannel. Meggings post-ironic food truck man bun banh mi quinoa. VHS scenester biodiesel, chambray small batch synth truffaut jean shorts tumblr street art marfa."
 )
 Artist.create(

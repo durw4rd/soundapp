@@ -2,10 +2,12 @@
   <%= @artist.name %> <%= link_to "Home", root_path, class: "btn btn-default", style: "float: right" %>
 </h1>
 
-<h3><%= @artist.country %></h3>
+<div class="artist-body">
+  <h3><%= @artist.country %></h3>
 
-<p> <%= image_tag(@artist.image) %> </p>
-<p><%= simple_format @artist.bio %></p>
+  <p> <%= image_tag(@artist.image) %> </p>
+  <p><%= simple_format @artist.bio %></p>
+</div>  
 
 <h1>Songs</h1>
 
